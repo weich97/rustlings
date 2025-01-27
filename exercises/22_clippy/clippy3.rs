@@ -6,16 +6,16 @@
 fn main() {
     let my_option: Option<()> = None;
     if my_option.is_none() {
-        println!("{:?}", my_option.unwrap());
+        println!("{:?}", my_option);
     }
 
     let my_arr = &[
-        -1, -2, -3
-        -4, -5, -6
+        -1, -2, -3,
+        -4, -5, -6,
     ];
     println!("My array! Here it is: {my_arr:?}");
 
-    let my_empty_vec = vec![1, 2, 3, 4, 5].resize(0, 5);
+    let my_empty_vec = vec![1, 2, 3, 4, 5];
     println!("This Vec is empty, see? {my_empty_vec:?}");
 
     let mut value_a = 45;
